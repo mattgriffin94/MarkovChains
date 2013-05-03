@@ -45,7 +45,7 @@ class Person(object):
     
     while word[-1] != ".":
       
-      if((result.split()[-2],word) in self.cache2): # prioritize the two word cache
+      if((result.split()[-2],word) in self.cache2): #prioritize the two word cache
         word = choice(self.cache2[(result.split()[-2],word)])
         result = result + " " + word
       else:
